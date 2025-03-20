@@ -12,7 +12,7 @@ ePar(parseInt(prompt('Digite um número')));
 
 //Exercício 2
 function calcular(numero1, numero2){
-    let adicao = parseInt(numero1) + parseInt(numero2);
+    let adicao = parseFloat(numero1) + parseFloat(numero2);
     let subtracao = numero1 - numero2;
     let multiplicacao = numero1 * numero2;
     let divisao = numero1 / numero2;
@@ -68,3 +68,11 @@ mensagemPersonalizada(prompt('Digite um nome'), prompt('Digite uma mensagem'));
 
 */
 //Exercício 8
+
+function media(numero1, numero2, numero3){
+    return (parseFloat(numero1) + parseFloat(numero2) + parseFloat(numero3)) / 3;
+}
+
+console.log('A média é ' + media(prompt('Digite o número 1'), prompt('Digite o número 2'), prompt('Digite o número 3')))
+
+//Exercício 9
