@@ -66,13 +66,21 @@ function mensagemPersonalizada(nome, mensagem){
 
 mensagemPersonalizada(prompt('Digite um nome'), prompt('Digite uma mensagem'));
 
-*/
 //Exercício 8
 
 function media(numero1, numero2, numero3){
     return (parseFloat(numero1) + parseFloat(numero2) + parseFloat(numero3)) / 3;
 }
 
-console.log('A média é ' + media(prompt('Digite o número 1'), prompt('Digite o número 2'), prompt('Digite o número 3')))
+console.log('A média é ' + media(prompt('Digite o número 1'), prompt('Digite o número 2'), prompt('Digite o número 3')));
 
 //Exercício 9
+for(let i = 1; i <= 20; i++){
+    if(i % 3 === 0){
+        console.log( i + ' é múltiplo de 3');
+    }else{
+        console.log(i + ' não é múltiplo de 3');
+    }
+    
+}
+*/
