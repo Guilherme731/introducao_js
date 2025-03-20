@@ -6,4 +6,4 @@ function ePar(number){
     }
 }
 
-ePar(2);
+ePar(prompt());
