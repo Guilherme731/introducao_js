@@ -1,16 +1,16 @@
 //Exercício 11
-function ex11(){
-    function verificarSinal(numero){
-        if(numero > 0){
+function ex11() {
+    function verificarSinal(numero) {
+        if (numero > 0) {
             //caso positivo...
             console.log('Positivo');
-        }else if(numero < 0){
+        } else if (numero < 0) {
             //caso negativo...
             console.log('Negativo');
-        }else if(numero === 0){
+        } else if (numero === 0) {
             //caso 0...
             console.log('Zero');
-        }else{
+        } else {
             //Caso nenhum dos anteriores
             console.log('Valor inválido');
         }
@@ -20,19 +20,19 @@ function ex11(){
 }
 
 //Exercício 12
-function ex12(){
-    function converterTemperatura(celsius){
-        return celsius * 9/5 + 32;
+function ex12() {
+    function converterTemperatura(celsius) {
+        return celsius * 9 / 5 + 32;
     }
 
     console.log('A temperatura em Fahreheit é ' + converterTemperatura(parseFloat(prompt('Qual a temperatura em Celsius?'))));
 }
 
 //Exercício 13
-function ex13(){
+function ex13() {
     let n = 1;
     let total = 0;
-    while(n <= 100){
+    while (n <= 100) {
         total += n; // Adiciona n ao total
         n++; //Incrementa n
     }
@@ -40,13 +40,13 @@ function ex13(){
 }
 
 //Exercício 14
-function ex14(){
-    function substituirPalavra(frase){
+function ex14() {
+    function substituirPalavra(frase) {
         let novaFrase = '';
         //Divide a frase por espaços e, em cada palavra...
         frase.split(' ').forEach(palavra => {
             //Verifica se a palavra é 'azul', se for, muda para 'vermelho'
-            if(palavra === 'azul'){
+            if (palavra === 'azul') {
                 palavra = 'vermelho';
             }
             //Adiciona a palvra na nova frase
@@ -59,11 +59,11 @@ function ex14(){
 }
 
 //Exercício 15
-function ex15(){
-    function verificarTamanho(frase){
-        if(frase.length > 10){
+function ex15() {
+    function verificarTamanho(frase) {
+        if (frase.length > 10) {
             console.log('A frase tem mais de 10 caracteres');
-        }else{
+        } else {
             console.log('A frase não tem mais de 10 caracteres');
         }
     }
@@ -72,15 +72,15 @@ function ex15(){
 }
 
 //Exercício 16
-function ex16(){
+function ex16() {
     let frutas = ['maçã', 'banana', 'laranja', 'pera', 'tangerina'];
     console.log(frutas[2]);
 }
 
 //Exercício 17
-function ex17(){
-    function saudacao(nome, saudacao){
-        if(saudacao === null || saudacao === ''){
+function ex17() {
+    function saudacao(nome, saudacao) {
+        if (saudacao === null || saudacao === '') {
             saudacao = 'Bem-vindo(a)';
         }
 
@@ -91,11 +91,11 @@ function ex17(){
 }
 
 //Exercício 18
-function ex18(){
-    function verificarAprovacao(nota){
-        if(nota >= 6){
+function ex18() {
+    function verificarAprovacao(nota) {
+        if (nota >= 6) {
             console.log('Aprovado');
-        }else{
+        } else {
             console.log('Reprovado');
         }
     }
@@ -104,10 +104,25 @@ function ex18(){
 }
 
 //Exercício 19
-function ex19(){
-    for(let i = 0; i <= 30; i++){
-        if(i % 2 === 0){
+function ex19() {
+    for (let i = 0; i <= 30; i++) {
+        if (i % 2 === 0) {
             console.log(i);
         }
     }
+}
+
+//Exercício 20
+function ex20() {
+    function contarVogais(palavra) {
+        let qtdVogais = 0;
+        for (let i = 0; i < palavra.length; i++) {
+            if (palavra[i] == 'a' || palavra[i] == 'A' || palavra[i] == 'e' || palavra[i] == 'E' || palavra[i] == 'i' || palavra[i] == 'I' || palavra[i] == 'o' || palavra[i] == 'O' || palavra[i] == 'u' || palavra[i] == 'U'){
+                qtdVogais++;
+            }
+        }
+        return qtdVogais;
+    }
+
+    console.log('A palavra possui ' + contarVogais(prompt('Digite uma palavra')) + ' vogais')
 }
