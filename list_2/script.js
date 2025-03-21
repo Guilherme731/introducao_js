@@ -163,3 +163,14 @@ function ex23(){
         n++;
     }
 }
+
+//Exercício 24
+function ex24(){
+    function capitalizar(texto){
+
+        let novo = texto[0].toUpperCase();
+        return novo;
+    }
+
+    console.log(capitalizar(prompt('Digite um texto para capitalizar')));
+}
