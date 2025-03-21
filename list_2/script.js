@@ -39,6 +39,7 @@ function ex13(){
     console.log('A soma dos números de 1 a 100 é ' + total);
 }
 
+//Exercício 14
 function ex14(){
     function substituirPalavra(frase){
         let novaFrase = '';
@@ -57,6 +58,7 @@ function ex14(){
     substituirPalavra(prompt('Digite uma frase'));
 }
 
+//Exercício 15
 function ex15(){
     function verificarTamanho(frase){
         if(frase.length > 10){
@@ -67,4 +69,10 @@ function ex15(){
     }
 
     verificarTamanho(prompt('Digite uma frase'));
+}
+
+//Exercício 16
+function ex16(){
+    let frutas = ['maçã', 'banana', 'laranja', 'pera', 'tangerina'];
+    console.log(frutas[2]);
 }
