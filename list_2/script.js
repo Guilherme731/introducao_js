@@ -141,5 +141,14 @@ function ex21(){
     arrayParaSomar[0] = parseFloat(prompt('Digite o número 1'));
     arrayParaSomar[1] = parseFloat(prompt('Digite o número 2'));
     arrayParaSomar[2] = parseFloat(prompt('Digite o número 3'));
-    console.log('A soma do array é ' + somarArray(arrayParaSomar))
+    console.log('A soma do array é ' + somarArray(arrayParaSomar));
+}
+
+//Exercício 22
+function ex22(){
+    function dobrarNumero(numero){
+        return numero * 2;
+    }
+
+    console.log('O dobro é ' + dobrarNumero(parseFloat(prompt('Digite um número'))));
 }
