@@ -25,5 +25,16 @@ function ex12(){
         return celsius * 9/5 + 32;
     }
 
-    console.log('A temperatura em Fahreheit é ' + converterTemperatura(parseFloat(prompt('Qual a temperatura em Celsius?'))))
+    console.log('A temperatura em Fahreheit é ' + converterTemperatura(parseFloat(prompt('Qual a temperatura em Celsius?'))));
+}
+
+//Exercício 13
+function ex13(){
+    let n = 1;
+    let total = 0;
+    while(n <= 100){
+        total += n; // Adiciona n ao total
+        n++; //Incrementa n
+    }
+    console.log('A soma dos números de 1 a 100 é ' + total);
 }
