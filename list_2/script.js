@@ -152,3 +152,14 @@ function ex22(){
 
     console.log('O dobro é ' + dobrarNumero(parseFloat(prompt('Digite um número'))));
 }
+
+//Exercício 23
+function ex23(){
+    let n = 2;
+    while(n <= 20){
+        if(n % 2 === 0){
+            console.log(n);
+        }
+        n++;
+    }
+}
