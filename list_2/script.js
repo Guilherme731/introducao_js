@@ -76,3 +76,16 @@ function ex16(){
     let frutas = ['maçã', 'banana', 'laranja', 'pera', 'tangerina'];
     console.log(frutas[2]);
 }
+
+//Exercício 17
+function ex17(){
+    function saudacao(nome, saudacao){
+        if(saudacao === null || saudacao === ''){
+            saudacao = 'Bem-vindo(a)';
+        }
+
+        return saudacao + ' ' + nome;
+    }
+
+    console.log(saudacao(prompt('Digite um nome'), prompt('Digite uma saudação')))
+}
