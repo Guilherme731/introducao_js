@@ -42,14 +42,29 @@ function ex13(){
 function ex14(){
     function substituirPalavra(frase){
         let novaFrase = '';
+        //Divide a frase por espaços e, em cada palavra...
         frase.split(' ').forEach(palavra => {
+            //Verifica se a palavra é 'azul', se for, muda para 'vermelho'
             if(palavra === 'azul'){
                 palavra = 'vermelho';
             }
+            //Adiciona a palvra na nova frase
             novaFrase = novaFrase + ' ' + palavra;
         });
         console.log(novaFrase);
     }
 
     substituirPalavra(prompt('Digite uma frase'));
+}
+
+function ex15(){
+    function verificarTamanho(frase){
+        if(frase.length > 10){
+            console.log('A frase tem mais de 10 caracteres');
+        }else{
+            console.log('A frase não tem mais de 10 caracteres');
+        }
+    }
+
+    verificarTamanho(prompt('Digite uma frase'));
 }
