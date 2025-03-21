@@ -124,5 +124,22 @@ function ex20() {
         return qtdVogais;
     }
 
-    console.log('A palavra possui ' + contarVogais(prompt('Digite uma palavra')) + ' vogais')
+    console.log('A palavra possui ' + contarVogais(prompt('Digite uma palavra')) + ' vogais');
+}
+
+//Exercício 21
+function ex21(){
+    function somarArray(array){
+        let soma = 0;
+        array.forEach(numero =>{
+            soma += numero;
+        });
+        return soma;
+    }
+
+    let arrayParaSomar = [];
+    arrayParaSomar[0] = parseFloat(prompt('Digite o número 1'));
+    arrayParaSomar[1] = parseFloat(prompt('Digite o número 2'));
+    arrayParaSomar[2] = parseFloat(prompt('Digite o número 3'));
+    console.log('A soma do array é ' + somarArray(arrayParaSomar))
 }
