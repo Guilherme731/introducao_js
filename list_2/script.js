@@ -38,3 +38,18 @@ function ex13(){
     }
     console.log('A soma dos números de 1 a 100 é ' + total);
 }
+
+function ex14(){
+    function substituirPalavra(frase){
+        let novaFrase = '';
+        frase.split(' ').forEach(palavra => {
+            if(palavra === 'azul'){
+                palavra = 'vermelho';
+            }
+            novaFrase = novaFrase + ' ' + palavra;
+        });
+        console.log(novaFrase);
+    }
+
+    substituirPalavra(prompt('Digite uma frase'));
+}
