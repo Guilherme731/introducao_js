@@ -87,5 +87,18 @@ function ex17(){
         return saudacao + ' ' + nome;
     }
 
-    console.log(saudacao(prompt('Digite um nome'), prompt('Digite uma saudação')))
+    console.log(saudacao(prompt('Digite um nome'), prompt('Digite uma saudação')));
+}
+
+//Exercício 18
+function ex18(){
+    function verificarAprovacao(nota){
+        if(nota >= 6){
+            console.log('Aprovado');
+        }else{
+            console.log('Reprovado');
+        }
+    }
+
+    verificarAprovacao(parseFloat(prompt('Digite sua nota')));
 }
