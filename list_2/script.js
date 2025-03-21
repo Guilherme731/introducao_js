@@ -18,3 +18,12 @@ function ex11(){
 
     verificarSinal(parseFloat(prompt('Digite um número')));
 }
+
+//Exercício 12
+function ex12(){
+    function converterTemperatura(celsius){
+        return celsius * 9/5 + 32;
+    }
+
+    console.log('A temperatura em Fahreheit é ' + converterTemperatura(parseFloat(prompt('Qual a temperatura em Celsius?'))))
+}
