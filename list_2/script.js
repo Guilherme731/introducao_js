@@ -167,9 +167,15 @@ function ex23(){
 //Exercício 24
 function ex24(){
     function capitalizar(texto){
-
-        let novo = texto[0].toUpperCase();
-        return novo;
+        let novoTexto = '';
+        for(let i = 0; i < texto.length; i++){
+            if(i === 0){
+                novoTexto = novoTexto + texto[i].toUpperCase();
+            }else{
+                novoTexto = novoTexto + texto[i];
+            }
+        }
+        return novoTexto;
     }
 
     console.log(capitalizar(prompt('Digite um texto para capitalizar')));
