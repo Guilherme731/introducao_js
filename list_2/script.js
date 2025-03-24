@@ -94,13 +94,13 @@ function ex17() {
 function ex18() {
     function verificarAprovacao(nota) {
         if (nota >= 6) {
-            console.log('Aprovado');
+            return 'Aprovado';
         } else {
-            console.log('Reprovado');
+            return 'Reprovado';
         }
     }
 
-    verificarAprovacao(parseFloat(prompt('Digite sua nota')));
+    console.log(verificarAprovacao(parseFloat(prompt('Digite sua nota'))));
 }
 
 //Exercício 19
@@ -179,4 +179,18 @@ function ex24(){
     }
 
     console.log(capitalizar(prompt('Digite um texto para capitalizar')));
+}
+
+//Exercício 25
+function ex25(){
+
+    function anoBissexto(ano){
+        if(ano % 4 === 0 && (ano % 100 != 0 || ano % 400 === 0)){
+            // é divisivel por 4 E (não multiplo de 100 OU é multiplo de 400)
+            return true;
+        }
+        return false;
+    }
+
+    console.log(anoBissexto(parseInt(prompt('Digite um ano'))));
 }
